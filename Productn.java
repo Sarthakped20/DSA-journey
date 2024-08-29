@@ -6,7 +6,7 @@ public class Productn {
     public static void main(String[] args) {
 
 //        taking long DT becoz answer can be a large number
-        long ans = funct(4);
+        long ans = funct(5);
         System.out.println(ans);
     }
     static long funct (int n){

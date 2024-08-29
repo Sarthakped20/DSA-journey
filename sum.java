@@ -1,18 +1,14 @@
-package com.sarthak;
-
-import java.util.Scanner;
+package com.recurSion;
 
 public class sum {
     public static void main(String[] args) {
-        int ans = sum();
+        int ans = sumof(6);
+        System.out.println(ans);
     }
-    static int sum(){
-        Scanner input = new Scanner(System.in);
-
-        int a= input.nextInt();
-        int b= input.nextInt();
-        int sum = a+b;
-        System.out.println("sum is " + sum);
-        return sum;
+    static int sumof(int n ){
+        if (n<=1){
+            return 1;
+        }
+        return n + sumof(n-1);
     }
 }

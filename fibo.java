@@ -2,7 +2,7 @@ package com.recurSion;
 
 public class fibo {
     public static void main(String[] args) {
-        System.out.println(fibo(5));
+        System.out.println(fibo(3));
     }static int fibo(int n){
         if (n<2){
             return n ;
