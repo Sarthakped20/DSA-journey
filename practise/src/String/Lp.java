@@ -38,7 +38,9 @@ public class Lp {
         if (s.length() != t.length())return false;
         int [] freq = new int[25];
 
-        for (char ch : s.toCharArray())freq[ch - 'a']++;
+        for (char ch : s.toCharArray()) {
+            freq[ch - 'a']++;
+        }
         for (char ch : t.toCharArray())freq[ch - 'a']--;
 
         for (int freqs : freq){
@@ -48,4 +50,6 @@ public class Lp {
         }
         return true;
     }
+
+
 }

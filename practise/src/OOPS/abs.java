@@ -30,6 +30,12 @@ public class abs {
         Cow cow = new Cow();
         cow.makesound();
         cow.eat();
+
+        Online p1 = new Online();
+        p1.makePayment();
+
+//        Card p2 = new Card();
+//        p2.makePayment();
     }
 }
 
@@ -49,5 +55,23 @@ class Cat extends Animalk{
 class Cow extends Animalk{
     public void makesound(){
         System.out.println("Moos");
+    }
+}
+
+
+abstract class Payment{
+    public abstract void makePayment();
+}
+
+class Online extends Payment{
+    @Override
+    public void makePayment() {
+        System.out.println("Ye online payment method hai");
+    }
+}
+class Card extends Payment{
+    @Override
+    public void makePayment() {
+        System.out.println("This is card Payment");
     }
 }

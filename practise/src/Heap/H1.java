@@ -8,7 +8,7 @@ public class H1 {
         int [] arr = { 1,23,3,45,545,5643,434,544};
         int k =3;
         System.out.println(fkl(arr,k));
-        System.out.println(" : ");
+//        System.out.println("");
         System.out.println(fkse(arr,k));
         System.out.println("Smaallest : "+ small(arr,k));
     }
